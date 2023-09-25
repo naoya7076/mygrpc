@@ -50,13 +50,12 @@ func main() {
 			Hello()
 
 		case "2":
-			HelloServerStream
+			HelloServerStream()
 		case "3":
 			fmt.Println("Bye!")
-			goto M
+			return
 		}
 	}
-M:
 }
 
 func Hello() {
