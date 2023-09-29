@@ -57,7 +57,7 @@ func (s *myServer) HelloClientStream(stream hellopb.GreetingService_HelloClientS
 	}
 }
 
-func (s *myServer) HelloBioStreams(stream hellopb.GreetingService_HelloBiStreamsServer) error {
+func (s *myServer) HelloBiStreams(stream hellopb.GreetingService_HelloBiStreamsServer) error {
 	for {
 		req, err := stream.Recv()
 		if errors.Is(err, io.EOF) {
